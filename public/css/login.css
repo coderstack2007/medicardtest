@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,500,600,700&display=swap');
+* {
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif !important;
+}
+html,
+body {
+    display: grid;
+    height: 100%;
+    place-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow-y: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #dde5f4;
+    height: 100vh;
+}
+
+.screen-1 {
+    background: #f1f7fe;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    box-shadow: 0 0 2em #e6e9f9;
+    gap: 2em;
+}
+
+.screen-1 .logo {
+    margin-top: -3em;
+}
+
+.screen-1 .email {
+    background: white;
+    box-shadow: 0 0 2em #e6e9f9;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+    margin-top: -3em;
+}
+
+.screen-1 .email input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .email input::-moz-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .email input:-ms-input-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .email input::placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .email ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password {
+    background: white;
+    box-shadow: 0 0 2em #e6e9f9;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    border-radius: 20px;
+    color: #4d4d4d;
+}
+
+.screen-1 .password input {
+    outline: none;
+    border: none;
+}
+
+.screen-1 .password input::-moz-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .password input:-ms-input-placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .password input::placeholder {
+    color: black;
+    font-size: 0.9em;
+}
+
+.screen-1 .password ion-icon {
+    color: #4d4d4d;
+    margin-bottom: -0.2em;
+}
+
+.screen-1 .password .show-hide {
+    margin-right: -5em;
+}
+
+.screen-1 .login {
+    padding: 1em;
+    background: #3e4684;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.screen-1 .footer {
+    display: flex;
+    font-size: 0.7em;
+    color: #5e5e5e;
+    gap: 14em;
+    padding-bottom: 10em;
+}
+
+.screen-1 .footer span {
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+.wrapper {
+    display: inline-flex;
+    height: 100px;
+    width: 400px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px 15px;
+}
+
+.wrapper .option {
+    background: #fff;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 0 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 0 10px;
+    border: 2px solid lightgrey;
+    transition: all 0.3s ease;
+}
+
+.wrapper .option .dot {
+    height: 20px;
+    width: 20px;
+    background: #d9d9d9;
+    border-radius: 50%;
+    position: relative;
+}
+
+.wrapper .option .dot::before {
+    position: absolute;
+    content: "";
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    opacity: 0;
+    transform: scale(1.5);
+    transition: all 0.3s ease;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+#option-1:checked:checked~.option-1,
+#option-2:checked:checked~.option-2,
+#option-3:checked:checked~.option-3 {
+    border-color: #0069d9;
+    background: #0069d9;
+}
+
+#option-1:checked:checked~.option-1 .dot,
+#option-2:checked:checked~.option-2 .dot,
+#option-3:checked:checked~.option-3 .dot {
+    background: #fff;
+}
+
+#option-1:checked:checked~.option-1 .dot::before,
+#option-2:checked:checked~.option-2 .dot::before,
+#option-3:checked:checked~.option-3 .dot::before {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.wrapper .option span {
+    font-size: 20px;
+    color: #808080;
+}
+
+#option-1:checked:checked~.option-1 span,
+#option-2:checked:checked~.option-2 span,
+#option-3:checked:checked~.option-3 span {
+    color: #fff;
+}
+
+
